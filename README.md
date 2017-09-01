@@ -7,7 +7,6 @@ $error = false;
 
 try {
     $reservation = new HRCReservation('demo.key');
-
    
     try {
         $reservation->send($_POST['date'], $_POST['time'], $_POST['name'], $_POST['phone'], $_POST['count'], $_POST['message']);
